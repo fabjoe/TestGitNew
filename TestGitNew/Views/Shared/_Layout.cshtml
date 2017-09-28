@@ -30,7 +30,10 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="col-md-3">Colonna sinistra</div>
+        <div class="col-md-6">@RenderBody()</div>
+        <div class="col-md-3">Colonna destra</div>
+        <div class="clearfix"></div>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
